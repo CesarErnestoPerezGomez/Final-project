@@ -6,6 +6,7 @@ const HouseModel  = require('./client/src/models/houses')
 const ContactModel  = require('./client/src/models/forms')
 
 const bodyParser = require('body-parser');
+const path = require('path'); // Importa el módulo 'path' aquí
 const app = express();
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(express.json());  // Parse JSON data
